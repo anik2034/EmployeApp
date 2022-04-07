@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="300dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/largeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/pic1" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/Nametext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="Name"
+        android:textColor="@color/mint"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+    <TextView
+        android:id="@+id/Status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Status"
+        app:layout_constraintBottom_toTopOf="@id/applied"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nametext" />
+
+    <TextView
+        android:id="@+id/applied"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="-30dp"
+        android:text="Applied"
+        android:textColor="@color/mint"
+        app:layout_constraintBottom_toTopOf="@+id/appliedN"
+        app:layout_constraintEnd_toStartOf="@+id/reviewed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Status" />
+
+    <TextView
+        android:id="@+id/contacted"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="-30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:text="Contacted"
+        android:textColor="@color/mint"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/contactedN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reviewed"
+        app:layout_constraintTop_toBottomOf="@+id/Status" />
+
+    <TextView
+        android:id="@+id/reviewed"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        android:text="Reviewed"
+        android:textColor="@color/mint"
+        app:layout_constraintBottom_toTopOf="@+id/ReviewedN"
+        app:layout_constraintEnd_toStartOf="@+id/contacted"
+        app:layout_constraintStart_toEndOf="@+id/applied"
+        app:layout_constraintTop_toBottomOf="@+id/Status" />
+
+    <TextView
+        android:id="@+id/appliedN"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="80dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/applied"
+        app:layout_constraintStart_toStartOf="@+id/applied"
+        app:layout_constraintTop_toBottomOf="@+id/applied" />
+
+    <TextView
+        android:id="@+id/ReviewedN"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="80dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/reviewed"
+        app:layout_constraintStart_toStartOf="@+id/reviewed"
+        app:layout_constraintTop_toBottomOf="@id/reviewed" />
+
+    <TextView
+        android:id="@+id/contactedN"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="80dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/contacted"
+        app:layout_constraintStart_toStartOf="@+id/contacted"
+        app:layout_constraintTop_toBottomOf="@+id/contacted" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
